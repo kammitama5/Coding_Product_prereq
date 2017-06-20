@@ -1,6 +1,6 @@
 function bubba(a)
 {
-    if(a.title.length < 50){
+    if(a.title.length <= 50){
      
       console.log(('<a href='+'"'+a.link+'"'+'>'+a.title+'</a>'))
     }
