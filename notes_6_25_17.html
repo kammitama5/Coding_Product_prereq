@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="icon" href="http://antifavicon.com/colorwheel.png">
+		<title>
+			Notes for "Notes for Coding for Product 6/25/17"
+		</title>
+	<head>
+	<body>
+		<h3>Intro to Lean / Agile</h3>
+		<p>
+			<ul>
+				<li>Lean Methodology :
+				Lean Startup by Eric Ries, Lean Principles</li>
+				<li>Ideas, Build, Product, Measure, Data, Learn</li>
+				<li>Product Design : </li>
+					<ul>
+						<li>Information Architecture for the World Wide Web : Richard Saul Wurman</li>
+						<li>Content Strategy : How is the information organized?</li>
+						<li>How is navigation clear? </li>
+						<li>Peter Morville's Honeycomb</li>
+						<li>JJG's (Jesse James Garrett) Elements of UX </li>
+						<li>Jeff Gothelf's Lean UX</li>
+					</ul>
+				<li>Personas</li>
+					<ul>
+						<li>User Story</li>
+						<li>User Motivations</li>
+						<li>User Influencers</li>
+						<li>User Goals</li>
+						<li>Ideal Person targeted vs person you want to bring in</li>
+					</ul>
+					<ul>Empathy Map
+						<li>Do, Say, Think/Feel, Hear, Pain, Gain</li>
+						<li>Awareness, Explore, Acquisition/Conversion, Onboarding, Experience, Retention, Referral/Share on social, Revenue, Repeat</li>
+					</ul>
+					<li>Problem Statement : _____(type of user) needs a way to ____ (user need) surprisingly/ because/ but
+					________ (insight) </li>
+					<li>Problem Hypothesis : We believe that ____ (Type of user) needs ____ (user need). We will know this is true if ______ (evaluation criteria/ metric) </li>
+					<li>Helps you determine features/ functionality of app </li>
+					<li>Faceted Feature Analysis</li>
+						<ul>
+							<li>ROI : Time</li>
+							<li>Tech Effort : Cost</li>
+							<li>UX Value : Quality</li>
+							<li>Total</li>
+							<li>Trello, Pivotal Tracker, JIRA </li>
+							<li>Faceted Feature Analysis : Adam Polansky</li>
+							<li>1 to 5 scale with 1 being least important </li>
+						</ul>
+					<li>Red Route Analysis</li>
+						<ul>
+							<li>How many people are using how often</li>
+						</ul>
+			</ul>
+		</p>
+		<p>
+			<ul>
+				<li>Wireframing</li>
+				<li>Sketch, Paper-Prototype early</li>
+				<li>Sketch Tool</li>
+				<li>Stocksy</li>
+				<li>Getty Images</li>
+				<li>The Noun Project : line art </li>
+				<li>InVision : Prototyping tool</li>
+				<li>Origami : good for animations </li>
+			</ul>
+		</p>
+		<h3>How Websites Work</h3>
+		<p>
+			<ul>
+				<li>Client : accesses the web</li>
+				<li>Server : responds to HTTP Protocol</li>
+				<li>HTTP : Hypertext Protocol</li>
+				<li>Static Web Page</li>
+					<ul>
+						<li>Each page coded</li>
+					</ul>
+				<li>Dynamic Web Page</li>
+					<ul>
+						<li>Can change code or data</li>
+						<li>Can be served in code or browser</li>
+					</ul>
+				<li>Database : organized collection of data</li>
+					<ul>
+						<li>Web API (JSON or XML)</li>
+					</ul>
+			</ul>
+
+		</p>
+		<h3>Parts of a Web App</h3>
+		<p>
+			<ul>
+				<li>Router : when a user visits a url, the app should do this</li>
+				<li>Authentication</li>
+				<li>Authorization</li>
+				<li>Data sources : database, API </li>
+			</ul>
+		</p>	
+		<p>
+			<ul>
+				<li>Code that fetches the data</li>
+				<li>Code that manipulates the data</li>
+				<li>Code that renders the content for the browser</li>
+			</ul>
+		</p>
+		<h3>Server-side vs Client Side Data</h3>
+		<p>
+			<ul>
+				<li>Server side is written in PHP, Python, Ruby, JS</li>
+				<li>For web app, code generates HTML. For APIs, code generates JSON</li>
+				<li>Data often comes from databases</li>
+				<li>responds to HTTP request</li>
+			</ul>
+		</p>
+		<h3>Client-side code</h3>
+		<p>
+			<ul>
+				<li>Client side code is written in JS</li>
+				<li>The code grabs and modifes the DOM</li>
+			</ul>
+		</p>
+		<h3>Options for creating a web app</h3>
+		<p>
+			<ul>
+				<li>Server-side apps : faster for SEO</li>
+			</ul>
+		</p>
+		<h3>What are Frameworks?</h3>
+		<p>
+			<ul>
+				<li>frameworks provide pre-made functionality and patterns</li>
+				<li>framework code + your app code = working web apps</li>
+			</ul>
+		</p>
+		<h3>Ajax : Asynchronous JavaScript and XML</h3>
+			<p>
+				Gmail is first big site to use AJAX
+			</p>
+		<h3>Single Page App(SPA)</h3>
+			<p>
+			Server sends one bare-bones HTML file and lots of JS to the browser.
+			Pro. Organizes client code in structures fashion
+			Rich Interactions : Updates the screen immediately instead of waiting for request-response cycle from the server.
+			Frameworks : Backbone(2010), Angular(2012), React(2013)
+			Con: Not SEO friendly (SEO works on HTML tags number)
+			</p>
+		<h3>SPA+API</h3>
+			<p>
+			API provides the data.
+			SPA renders the content.
+			SPA is JavaScript; API can be written in a variety of languages.
+			Pro: One API can be used by a variety of clients.
+			Con: multiple code bases, often times in multiple languages.
+			</p>
+		<h3>SAP+Cloud Database</h3>
+			<p>
+			Cloud Database provides the data(eg. Firebase).
+			SPA renders the content. "Serverless" web app. 
+			Pro:Quick to implement. Con: Limited number of choices for
+			client-side cloud databases.
+			</p>
+		<h3>SPA+Server-Side Rendering</h3>
+			<p>
+			Run SPA code on the server to create HTML on initial page load. 
+			Use client side code for subsequent page updates. 
+			Pro: SEO friendly. Faster initial page load.
+			Con: Takes time to set up server-side rendering.
+			</p>
+		<h3>Choosing a Framework</h3>
+			<p>
+			Python:Flask
+			Ruby:Sinatra
+			JavaScript
+			<ul>
+				<li>Server Rendered App: Express</li>
+				<li>Server rendered app + AJAX : Express + JavaScript
+				<li>SPA + cloud database : Vue + Firebase</li>
+			</ul>
+			</p>
+			<h3>Employment Friendly JavaScript Frameworks</h3>
+			<p>
+			<ul>
+				<li>Server Rendered App: Express</li>
+				<li>SPA + custom API : Angular, React + Express, Hapi</li>
+				<li>SPA+ server side rendering : Angular, React + Express, Hapi</li>
+			</ul>
+			</p>
+		<h2>Intro to Git Workflows</h2>
+		<h3>Why Version Control</h3>
+		<p>
+			View history of all code changes. Allow multiple people to work on project simultaneously. Experiment with new code without breaking existing code.
+			Never lose code. Look at previous versions of the code to find out when a bug was introduced.
+		</p>
+		<p>
+		<h3>Basic Commands : Local Repo</h3>
+			<ul>
+				<li>git branch (name of branch) : create branch</li>
+				<li>git checkout (name of branch) : switch the branch</li>
+				<li>git checkout -b (name of branch) : create new branch and switch to it</li>
+				<li>git branch : list branches</li>
+				<li>git merge : combine two branches</li>
+			</ul>
+		</p>	
+		<h3>Intro to Github</h3>
+			<ul>
+				<li>Github stores repos</li>
+				<li>Github allows people to work collaboratively</li>
+				<li>git remote add origin (server) : connect local repo to remote repo</li>
+				<li>git pull: get latest changes from remote server </li>
+				<li>git push (remote) (branch)</li>
+			</ul>
+		<h3>Group Project Workflows</h3>
+			<ul>
+				<li>Coding for Product repo</li>
+				<li>git clone (url)</li>
+				<li>Create new branch for each task</li>
+				<li>git checkout -b (branch name)</li>
+				<li>Do stuff</li>
+				<li>Commit changes</li>
+				<li>git push origin(branch name)</li>
+			</ul>
+		<h3>Code reviews</h3>
+			<ul>
+				<li>PR: pull request</li>
+				<li>When code is approved, merge into master</li>
+					<ul>
+						<li>Merging through command line</li>
+							<ul>
+								<li>Merge all comits from a branch into master</li>
+								<li>Simplest merge</li>
+							</ul>
+						<li>git checkout master</li>
+						<li>git pull origin master</li>
+						<li>git merge (branch name)</li>
+						<li>git push origin master</li>
+						<li>delete the branch on Github</li>
+					</ul>
+			</ul>
+		<p>
+			Most important thing is making code readable for future developers.
+		</p>
+		<h3>More complicated one: Squash / rebase</h3>
+			<p>
+				<ul>
+					<li>Combine multiple commits into one commit and merge it into msater</li>
+					<li>The commit history looks linear</li>
+					<li>more complicated flow</li>
+					<li>Squash and rebase flow<li>
+						<ul>
+							<li>git checkout master</li>
+							<li>git rebase -i master</li>
+						</ul>
+				</ul>
+			</p>
+		<h3>Merge Conflicts</h3>
+			<ul>
+				<li>You can get conflicts when you merge, rebase cherry-pick</li>
+			</ul>
+		<h3>Group Project</h3>
+			<p>
+			Problem statement: Pick a specific problem to solve.
+			<br>
+			If it doesn't solve the user's problem, don't build it.
+			<br>
+			External data: If the data exists, use it. If it doesn't exist, fake it.
+			<br>
+			<br>
+			<strong>MVP: Minimal Viable Product</strong>
+			</p>
+		<h3>Group Workflow</h3>
+			<ul>
+				<li>Team communication : sprints</li>
+				<li>Be flexible </li>
+				<li>Sunday demo: 1-2 minute presentation of what was done this week</li>
+				<li>Rotate presenter every week</li>
+			</ul>
+	</body>
+<html>
