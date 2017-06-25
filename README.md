@@ -11,3 +11,9 @@ pre-reqs my submittal
       Print in suggested output format
       
    2. Use the function from 1, loop over values in array -> (calling a function within a function).
+   
+## Notes
+
+- Included notes per week for five-Sundays-long workshop "Coding for Product"
+
+- Notes included for review
