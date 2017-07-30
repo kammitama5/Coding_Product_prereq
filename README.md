@@ -17,3 +17,10 @@ pre-reqs my submittal
 - Included notes per week for five-Sundays-long workshop "Coding for Product"
 
 - Notes included for review
+
+
+## Finished App by our team (@niamurrell, @badickens, @kammitama5):
+
+- [Live Link](https://rocky-woodland-22781.herokuapp.com/login)
+
+- [Code](https://github.com/CodingForProduct/metro_reward)
