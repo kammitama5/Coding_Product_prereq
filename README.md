@@ -21,8 +21,8 @@ pre-reqs my submittal
 
 ## Finished App by our team (@niamurrell, @badickens, @kammitama5):
 
-- Deployed on Heroku, App written in Node.js, Bootstrap, NPM, using Postgresql database
+- Deployed on Heroku, App written in Node.js, Bootstrap, NPM (Express, Sequelize, etc), using Postgresql database
 
-- [Live Link](https://rocky-woodland-22781.herokuapp.com/login)
+- [Live Link](https://rides-for-rewards.herokuapp.com/)
 
 - [Code](https://github.com/CodingForProduct/metro_reward)
